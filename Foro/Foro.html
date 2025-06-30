@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Discusión - Primeros Pasos</title>
+    <link rel="stylesheet" href="stylesforo.css">
+    <link rel="stylesheet" href="../Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header del Foro -->
+    <header class="forum-header">
+        <div class="container">
+            <div class="forum-nav">
+                <h1><i class="fas fa-comments"></i> Foro de Discusión</h1>
+                <div class="forum-actions">
+                    <a href="../index.html">Inicio</a>
+                    <button class="btn-new-topic"><i class="fas fa-plus"></i> crear</button>
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación de Categorías -->
+    <nav class="category-nav">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="todos">
+                    <i class="fas fa-home"></i> Todos
+                </button>
+                <button class="tab-btn" data-category="empleos">
+                    <i class="fas fa-briefcase"></i> Empleos
+                </button>
+                <button class="tab-btn" data-category="cursos">
+                    <i class="fas fa-graduation-cap"></i> Cursos
+                </button>
+                <button class="tab-btn" data-category="consejos">
+                    <i class="fas fa-lightbulb"></i> Consejos
+                </button>
+                <button class="tab-btn" data-category="experiencias">
+                    <i class="fas fa-star"></i> Experiencias
+                </button>
+                <button class="tab-btn" data-category="dudas">
+                    <i class="fas fa-question-circle"></i> Dudas
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal del Foro -->
+    <main class="forum-main">
+        <div class="container">
+            <!-- Estadísticas del Foro -->
+            <div class="forum-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">1,234</span>
+                        <span class="stat-label">Miembros</span>
+                    </div>
+                </div>
+        
+                <div class="stat-card">
+                    <i class="fas fa-reply"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">3,421</span>
+                        <span class="stat-label">Respuestas</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de Temas del Foro -->
+            <div class="forum-content">
+                <!-- Tema Destacado -->
+                <div class="topic-card featured">
+                    <div class="topic-badge">
+                        <i class="fas fa-star"></i> Destacado
+                    </div>
+                    <div class="topic-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Usuario">
+                    </div>
+                    <div class="topic-info">
+                        <h3><a href="#">Guía completa: Cómo prepararse para tu primera entrevista laboral</a></h3>
+                        <div class="topic-meta">
+                            <span class="topic-category empleos">Empleos</span>
+                            <span class="topic-author">Por <strong>MariaGonzalez</strong></span>
+                            <span class="topic-time"><i class="fas fa-clock"></i> Hace 2 horas</span>
+                        </div>
+                        <p class="topic-preview">Te comparto mi experiencia y consejos después de 15 entrevistas laborales. Desde qué ropa usar hasta cómo responder las preguntas más difíciles...</p>
+                    </div>
+                    <div class="topic-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>234</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comments"></i>
+                            <span>18</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tema Normal -->
+                <div class="topic-card">
+                    <div class="topic-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Usuario">
+                    </div>
+                    <div class="topic-info">
+                        <h3><a href="#">¿Cuáles son los mejores cursos gratuitos de programación para principiantes?</a></h3>
+                        <div class="topic-meta">
+                            <span class="topic-category cursos">Cursos</span>
+                            <span class="topic-author">Por <strong>CarlosRodriguez</strong></span>
+                            <span class="topic-time"><i class="fas fa-clock"></i> Hace 4 horas</span>
+                        </div>
+                        <p class="topic-preview">Hola comunidad! Estoy empezando en programación y busco recomendaciones de cursos gratuitos. He visto muchas opciones pero no sé por dónde empezar...</p>
+                    </div>
+                    <div class="topic-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>89</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comments"></i>
+                            <span>12</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más Temas -->
+                <div class="topic-card">
+                    <div class="topic-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Usuario">
+                    </div>
+                    <div class="topic-info">
+                        <h3><a href="#">Mi experiencia trabajando desde casa: pros y contras</a></h3>
+                        <div class="topic-meta">
+                            <span class="topic-category experiencias">Experiencias</span>
+                            <span class="topic-author">Por <strong>AnaLopez</strong></span>
+                            <span class="topic-time"><i class="fas fa-clock"></i> Hace 6 horas</span>
+                        </div>
+                        <p class="topic-preview">Después de 8 meses trabajando remotamente, quiero compartir mi experiencia. No todo es color de rosa pero tampoco es tan malo como pensaba...</p>
+                    </div>
+                    <div class="topic-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>156</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comments"></i>
+                            <span>24</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>19</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Usuario">
+                    </div>
+                    <div class="topic-info">
+                        <h3><a href="#">¿Cómo negociar el salario en tu primer trabajo?</a></h3>
+                        <div class="topic-meta">
+                            <span class="topic-category consejos">Consejos</span>
+                            <span class="topic-author">Por <strong>PedroMartinez</strong></span>
+                            <span class="topic-time"><i class="fas fa-clock"></i> Hace 1 día</span>
+                        </div>
+                        <p class="topic-preview">Estoy a punto de recibir una oferta laboral y no sé si debería negociar el salario o aceptar lo que me ofrezcan. ¿Qué recomiendan?</p>
+                    </div>
+                    <div class="topic-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>203</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comments"></i>
+                            <span>31</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Usuario">
+                    </div>
+                    <div class="topic-info">
+                        <h3><a href="#">Becas disponibles para estudiantes de tecnología 2024</a></h3>
+                        <div class="topic-meta">
+                            <span class="topic-category empleos">Empleos</span>
+                            <span class="topic-author">Por <strong>LauraFernandez</strong></span>
+                            <span class="topic-time"><i class="fas fa-clock"></i> Hace 2 días</span>
+                        </div>
+                        <p class="topic-preview">Encontré varias becas y oportunidades de financiación para estudios en tecnología. Aquí les comparto la lista actualizada...</p>
+                    </div>
+                    <div class="topic-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>445</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comments"></i>
+                            <span>8</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Primeros Pasos</h3>
+                    <p>Conectando jóvenes talentosos con su futuro profesional</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="../Cursos.html">Cursos Gratuitos</a></li>
+                        <li><a href="../Herramientas.html">Guías de CV</a></li>
+                        <li><a href="../Herramientas.html">Tips de Entrevista</a></li>
+                        <li><a href="Foro.html">Foro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Oportunidades</h4>
+                    <ul>
+                        <li><a href="../Oportunidades.html">Empleos</a></li>
+                        <li><a href="../Oportunidades.html">Pasantías</a></li>
+                        <li><a href="../Oportunidades.html">Voluntariados</a></li>
+                        <li><a href="../Oportunidades.html">Becas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="../Foro/Foro.html">Centro de Ayuda</a></li>
+                        <li><a href="../Foro/Foro.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Primeros Pasos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript básico para el foro
+        document.addEventListener('DOMContentLoaded', function() {
+            // Manejar pestañas de categorías
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    
+                    // Aquí podrías filtrar los temas según la categoría
+                    const category = this.dataset.category;
+                    console.log('Categoría seleccionada:', category);
+                });
+            });
+
+            // Botón nuevo tema
+            const newTopicBtn = document.querySelector('.btn-new-topic');
+            newTopicBtn.addEventListener('click', function() {
+                alert('Aquí se abriría el formulario para crear un nuevo tema');
+            });
+
+            // Botón búsqueda
+            const searchBtn = document.querySelector('.btn-search');
+            searchBtn.addEventListener('click', function() {
+                alert('Aquí se abriría el buscador del foro');
+            });
+        });
+    </script>
+</body>
+</html>

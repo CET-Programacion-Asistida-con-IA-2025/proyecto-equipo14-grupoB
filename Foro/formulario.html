@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                <h1><i class="fas fa-user-plus"></i> Únete a nosotros</h1>
+                <p>Completa el formulario para registrarte</p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <span>¡Formulario enviado exitosamente!</span>
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">
+                        <i class="fas fa-user"></i>
+                        Nombre
+                    </label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        class="form-control" 
+                        placeholder="Ingresa tu nombre"
+                        required
+                    >
+                    <div class="error-message" id="nombreError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">
+                        <i class="fas fa-user"></i>
+                        Apellido
+                    </label>
+                    <input 
+                        type="text" 
+                        id="apellido" 
+                        name="apellido" 
+                        class="form-control" 
+                        placeholder="Ingresa tu apellido"
+                        required
+                    >
+                    <div class="error-message" id="apellidoError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-control" 
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">
+                        <i class="fas fa-phone"></i>
+                        Celular
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="celular" 
+                        name="celular" 
+                        class="form-control" 
+                        placeholder="+54 9 11 1234-5678"
+                        required
+                    >
+                    <div class="error-message" id="celularError"></div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Formulario
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
