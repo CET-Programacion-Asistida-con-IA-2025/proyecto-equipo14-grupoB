@@ -76,7 +76,7 @@ Desarrollamos una **plataforma web frontend** que actúa como un hub integral pa
 - Capacitaciones específicas por sector
 - Información sobre qué habilidades son más valoradas
 
-### 🗣️ Comunicación Profesional
+### 🗣️Comunicación Profesional
 - Espacio para conectar con profesionales del área
 - Mentorías y consejos de expertos
 - Networking entre jóvenes y empleadores
